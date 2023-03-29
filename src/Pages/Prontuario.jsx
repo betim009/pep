@@ -34,37 +34,37 @@ const Prontuario = () => {
 
   return (
     <div>
-      <h1 className="text-center">Prontuário</h1>
+      <h1 className="text-center mt-3">Prontuário</h1>
       <form className="container" onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="form-group mb-2">
           <label htmlFor="nome">Nome:</label>
           <input type="text" className="form-control" id="nome" required value={nome} onChange={(e) => setNome(e.target.value)} />
         </div>
-        <div className="form-group">
+        <div className="form-group mb-2">
           <label htmlFor="idade">Idade:</label>
           <input type="number" className="form-control" id="idade" required value={idade} onChange={(e) => setIdade(e.target.value)} />
         </div>
-        <div className="form-group">
+        <div className="form-group mb-2">
           <label htmlFor="cidade">Cidade:</label>
           <input type="text" className="form-control" id="cidade" required value={cidade} onChange={(e) => setCidade(e.target.value)} />
         </div>
-        <div className="form-group">
+        <div className="form-group mb-2">
           <label htmlFor="bairro">Bairro:</label>
           <input type="text" className="form-control" id="bairro" required value={bairro} onChange={(e) => setBairro(e.target.value)} />
         </div>
-        <div className="form-group">
+        <div className="form-group mb-4">
           <label htmlFor="telefone">Telefone:</label>
           <input type="tel" className="form-control" id="telefone" required value={telefone} onChange={(e) => setTelefone(e.target.value)} />
         </div>
-        <div className="form-group">
+        <div className="form-group mb-2">
           <label htmlFor="alergias">Alergias:</label>
           <textarea className="form-control" id="alergias" rows="4" cols="20" value={alergias} onChange={(e) => setAlergias(e.target.value)}></textarea>
         </div>
-        <div className="form-group">
+        <div className="form-group mb-2">
           <label htmlFor="sintomas">Sintomas:</label>
           <textarea className="form-control" id="sintomas" rows="4" cols="20" value={sintomas} onChange={(e) => setSintomas(e.target.value)}></textarea>
         </div>
-        <button type="submit" className="btn btn-primary mt-2">Salvar</button>
+        <button type="submit" className="btn btn-primary mt-2">Enviar</button>
       </form>
       <div className="d-flex justify-content-center mt-4">
         <Link to="/resultados" className="btn btn-primary">
